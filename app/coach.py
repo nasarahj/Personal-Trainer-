@@ -33,9 +33,9 @@ def coach_response(user_message: str, user_id: str = "default") -> str:
 
     if injury and "safe" in user_message.lower():
     # naive extraction of exercise name
-    exercise = user_message.replace("safe", "").strip()
+       exercise = user_message.replace("safe", "").strip()
 
-    tool_result = exercise_safety_lookup(exercise, injury)
+       tool_result = exercise_safety_lookup(exercise, injury)
 
     tool_context = f"""
 Tool result (exercise safety check):

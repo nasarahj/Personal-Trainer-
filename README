@@ -1,0 +1,34 @@
+# AI Personal Trainer – Agentic LLM Application
+
+Public URL - https://5c0627528fdb19179d.gradio.live
+
+This project is an agent-based AI personal trainer built using Python, LangChain, and Gradio.  
+It demonstrates modern applied AI system design by combining large language models with persistent memory, deterministic tools, and structured outputs.
+
+The system generates personalized, safety-aware workout plans and adapts its responses based on user context such as injuries or preferences.
+
+---
+
+## Key Capabilities
+
+- Conversational chat interface
+- Persistent user memory across interactions
+- Tool-augmented reasoning for exercise safety
+- Structured, validated workout plans using schemas
+- Modular, production-style code organization
+- Dependency version pinning for reproducibility
+
+Project Directory 
+Personal-Trainer/
+│
+├── main.py # Application entry point
+├── ui.py # Gradio user interface
+├── requirements.txt # Pinned dependencies
+├── .gitignore # Git hygiene and security
+│
+└── app/
+├── coach.py # Core agent logic
+├── memory.py # Persistent memory handling
+├── tools.py # Deterministic tools (safety logic)
+├── schemas.py # Structured output definitions
+└── prompts.py # System-level prompt configuration
