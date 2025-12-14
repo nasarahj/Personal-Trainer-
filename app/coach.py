@@ -37,7 +37,7 @@ def coach_response(user_message: str, user_id: str = "default") -> str:
 
        tool_result = exercise_safety_lookup(exercise, injury)
 
-    tool_context = f"""
+       tool_context = f"""
 Tool result (exercise safety check):
 {tool_result}
 """
